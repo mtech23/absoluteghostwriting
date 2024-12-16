@@ -92,6 +92,9 @@ body{
 /* Reloader */
 
 
+
+
+
 .flex-center {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4720,7 +4723,7 @@ span.pkggdtl {
 }
 
 [class^="sub_con_box"] p {
-    width: 48%;
+    width: 48% !important;
     line-height: 29px;
     margin: 0 0 25px;
 }
@@ -14707,6 +14710,7 @@ body.child-illus .banner-form2 {
 }
 
 
+
 /*///////////childbook/////////*/
 
 
@@ -14936,12 +14940,8 @@ section.othrspgserv::after {
     border: 2px solid #f09e2e;
 }
 
-.slick-prev:before, .slick-next:before {
-    font-family: 'slick';
-    font-size: 50px;
-    line-height: 1;
-    opacity: .75;
-    color: #043732;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+p{
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }

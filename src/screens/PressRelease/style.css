@@ -1,0 +1,49 @@
+.pub_serv_bnr_info {
+    position: absolute;
+    top: 60%;
+    transform: translatey(-50%);
+    color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.middle1_con h2 {
+    font-size: 62px;
+    line-height: 72px;
+}
+
+.middle1_content {
+    width: unset;
+}
+
+
+body.press-release .middle1_con h2 {
+    font-size: 62px;
+    line-height: 72px;
+}
+
+body.press-release .middle1_content {
+    width: unset;
+}
+
+
+
+body.press-release .middle2_con h2 {
+    font-size: 62px;
+    line-height: 72px;
+}
+
+body.press-release .middle2_content {
+    width: unset;
+}
+@media only screen and (max-width: 1000px) {
+    .pub_serv_bnr_info {
+        top: auto;
+        transform: none;
+        width: 100%;
+        bottom: 40px;
+    }
+}
