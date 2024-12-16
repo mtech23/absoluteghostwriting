@@ -14935,3 +14935,13 @@ section.othrspgserv::after {
     border-radius: 50px 50px 0px 0px;
     border: 2px solid #f09e2e;
 }
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 50px;
+    line-height: 1;
+    opacity: .75;
+    color: #043732;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

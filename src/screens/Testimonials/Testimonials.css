@@ -1,0 +1,43 @@
+#main_area .main_con {
+    padding: 50px 0 100px;
+    min-height: 400px;
+  }
+  
+  #main_area::after {
+    display: none;
+  }
+  
+  footer .footer_top,
+  footer .footer_btm {
+    height: auto;
+    padding: 100px 0 40px;
+  }
+  
+  .bnr_con {
+    min-height: 170px;
+  }
+  
+  #banner {
+    background: #1a1a1a;
+  }
+  
+  .scrollbox {
+    overflow: auto;
+    max-height: 400px;
+    background: linear-gradient(white 30%, rgba(255, 255, 255, 0)),
+      linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%,
+      radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
+      radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0
+        100%;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+    background-attachment: local, local, scroll, scroll;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .bnr_con {
+      min-height: 0;
+    }
+  }
+  
