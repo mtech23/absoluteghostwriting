@@ -8,10 +8,8 @@ import PublishingServices from '../screens/PublishingServices';
 import PowerhouseServices from '../screens/PowerhouseServices';
 import GhostwritingServices from '../screens/GhostwritingServices';
 import OtherBookServices from '../screens/OtherBookServices';
-import Testimonials from '../screens/Testimonials/Testimonials';
-import AboutUs from '../screens/AboutUs/AboutUs';
-import FeaturedAuthors from '../screens/FeaturedAuthors/FeaturedAuthors';
-import Faq from '../screens/Faq/Faq';
+import PressRelease from '../screens/PressRelease';
+import ChildrensIllustrations from '../screens/ChildrensIllustrations';
 // import NotFound from './pages/NotFound'; 
 
 const AppRouter = () => {
@@ -23,14 +21,10 @@ const AppRouter = () => {
         <Route path="/publishing-services" element={<PublishingServices />} />
         <Route path="/powerhouse-services" element={<PowerhouseServices />} />
         <Route path="/ghostwriting-services" element={<GhostwritingServices />} />
-        <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/featured-authors" element={<FeaturedAuthors />} />
-        <Route path="/faq" element={<Faq />} />
         <Route path="/book-printing" element={<Home />} />
         <Route path="/other-book-services" element={<OtherBookServices />} />
-        <Route path="/press-release" element={<Home />} />
-        <Route path="/childrens-illustrations" element={<Home />} />
+        <Route path="/press-release" element={<PressRelease />} />
+        <Route path="/childrens-illustrations" element={<ChildrensIllustrations />} />
         <Route path="/childrens-book" element={<Home />} />
         <Route path="/featured-authors" element={<Home />} />
         <Route path="/testimonials" element={<Home />} />
