@@ -39,6 +39,16 @@ const AppRouter = () => {
         <Route path="/childrens-book" element={<ChildrensBook />} />
 
         
+        <Route path="/book-printing" element={<Home />} />
+        <Route path="/other-book-services" element={<OtherBookServices />} />
+        <Route path="/press-release" element={<PressRelease />} />
+        <Route path="/childrens-illustrations" element={<ChildrensIllustrations />} />
+        <Route path="/childrens-book" element={<Home />} />
+        <Route path="/featured-authors" element={<Home />} />
+        <Route path="/testimonials" element={<Home />} />
+        <Route path="/about-us" element={<Home />} />
+        <Route path="/featured-authors" element={<Home />} />
+        <Route path="/blogs" element={<Home />} />
         <Route path="/faq" element={<Home />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/contact-us" element={<ContactUS />} />
