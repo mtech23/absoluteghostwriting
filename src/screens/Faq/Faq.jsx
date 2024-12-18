@@ -3,7 +3,7 @@ import React from "react";
 import  { useState } from "react";
 import DefaultLayout from "../../components/layout";
 
-import "./Faq.css"
+// import "./Faq.css"
 
 
 const Faq = () => {
@@ -61,7 +61,7 @@ const Faq = () => {
                     <div className="faq-container">
       {faqCategories.map((category, categoryIndex) => (
         <div key={categoryIndex} className="faq-category">
-          <h3 className="subheader">{category.category}</h3>
+          {/* <h3 className="subheader">{category.category}</h3> */}
           <ul className="faq-list">
             {category.faqs.map((item, index) => (
               <li

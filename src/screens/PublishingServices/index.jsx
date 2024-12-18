@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import DefaultLayout from "../../components/layout";
 import "./style.css";
 
@@ -10,7 +10,19 @@ import subconimg2 from "../../assets/images/publishing-services/sub-con-img2.png
 // import publishingservicesbannerimg from "../../assets/videos/publishing-services-banner.jpg"
 
 const PublishingServices = () => {
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      document.body.classList.add('hompg', 'publi-serv');
+    }
+
+    return () => {
+      if (typeof document !== 'undefined') {
+        document.body.classList.remove('hompg', 'publi-serv');
+      }
+    };
+  }, []);
   return (
+    // <div className="hompg publi-serv">
     <DefaultLayout>
       <section id="banner_parent">
         <section id="banner" className="page-section">
@@ -287,6 +299,7 @@ const PublishingServices = () => {
 
 
     </DefaultLayout>
+    // </div>
   );
 };
 

@@ -11421,7 +11421,7 @@ p.authorname span {
 #contact_us {
     padding: 0 25px;
     position: relative;
-    background: url(../images/contact-us/body-bg.jpg) center center no-repeat;
+    background: url(assets/images/contact-us/body-bg.jpg) center center no-repeat;
 }
 
 .contact_us_con {

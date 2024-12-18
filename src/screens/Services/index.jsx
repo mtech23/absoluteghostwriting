@@ -2,6 +2,7 @@ import React from "react";
 import DefaultLayout from "../../components/layout";
 import "./style.css";
 
+
 import servicesbg from "../../assets/images/services/services-bg.jpg";
 
 import ghostwriter from "../../assets/images/ghos-twriter.png";
@@ -19,7 +20,7 @@ const Services = () => {
       >
         <section id="banner" className="page-section">
           <div className="wrapper">
-            <div className="bnr_con animatedParent">
+            <div className="bnr_con animatedParent services_page-banner">
               {/* <!-- <figure className="services_banner"><img src="assets/images/services/services-bg.jpg" alt="large books"></figure> --> */}
               <div className="container">
                 <div className="row align-items-center">

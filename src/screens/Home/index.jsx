@@ -11,6 +11,7 @@ import pg4 from "../../assets/images/pg4.png"
 import pg3 from "../../assets/images/pg3.png"
 import pg2 from "../../assets/images/pg2.png"
 import pg1 from "../../assets/images/pg1.png"
+
 import bookelement from "../../assets/images/book-element.png"
 
 import sliderimg from "../../assets/images/slider-img.jpg"
@@ -39,7 +40,23 @@ import port9 from "../../assets/images/port-9.webp"
 
 
 
+import Slider from "react-slick";
+
+
+
 const Home = () => {
+
+   const settings = {
+      dots: false, // Hide dots
+      arrows: false, // Hide arrows
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4, // Show 4 slides at a time
+      slidesToScroll: 1, // Scroll one slide at a time
+      autoplay: true, // Enable autoplay
+      autoplaySpeed: 3000, // Delay between slides in autoplay
+    };
+
   return (
     <DefaultLayout>
       <div id="fullpage">
@@ -79,10 +96,6 @@ const Home = () => {
                               <div className="indicator active"> <span className="marker"></span> </div>
                               <a href="testimonials">Success Stories</a>
                            </li>
-                           {/* <!--<li className="home-banner-location-item">-->
-                           <!--   <div className="indicator active"> <span className="marker"></span> </div>-->
-                           <!--   <a href="bookstore">Bookstore</a>-->
-                           <!--</li>--> */}
                            <li className="home-banner-location-item">
                               <div className="indicator active"> <span className="marker"></span> </div>
                               <a href="featured-authors">Pride of Absolute Ghostwriting</a>
@@ -95,9 +108,6 @@ const Home = () => {
                               <div className="indicator active"> <span className="marker"></span> </div>
                               <a href="faq">FAQ</a>
                            </li>
-
-
-
                         </ul>
                      </div>
                      <h2 className="">Expert</h2>
@@ -313,6 +323,7 @@ const Home = () => {
                </div>
                <div className="js-conveyor-1 author_lists">
                   <ul>
+                  {/* <Slider {...settings}> */}
                      <li>
                         <a href="featured-authors">
                            <figure><img src={port1} alt="Mindscope Seven" /></figure>
@@ -367,6 +378,7 @@ const Home = () => {
                            <h3>Dr. Ida Acuña-Garza</h3>
                         </a>
                      </li>
+                     {/* </Slider> */}
                   </ul>
                </div>
                <div className="btm1_content btmcntnt">

@@ -7,19 +7,19 @@
     display: none;
   }
   
-  footer .footer_top,
-  footer .footer_btm {
-    height: auto;
-    padding: 100px 0 40px;
-  }
   
   .bnr_con {
     min-height: 170px;
   }
-  
-  #banner {
-    background: #1a1a1a;
+
+  .testimonial_bnr-con{
+    height: auto !important;
+    padding: 0;
   }
+
+  
+  
+ 
   
   .scrollbox {
     overflow: auto;

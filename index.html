@@ -2,15 +2,961 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <link rel="icon" type="image/png" href="/src/assets/fav.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- index.html -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Vite + React</title>
+
+<link rel="stylesheet" href="./src/assets/css/style.css" />
+<link href="./src/assets/css/jquery-ui.css " media="all" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="./src/assets/css/media.css" />
+<link rel="stylesheet" href="./src/assets/css/hamburgers.min.css" />
+<!-- <link rel="stylesheet" href="./src/assets/css/animations.min.css" /> -->
+<link rel="stylesheet" href="./src/assets/css/animate.css" />
+<link rel="stylesheet" href="./src/assets/css/font-awesome.min.css" />
+<!-- <link rel="stylesheet" href="./src/assets/css/owl.theme.default.min.css" /> -->
+<link rel="stylesheet" href="./src/assets/css/slick.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
+<link rel="stylesheet" href="./src/assets/css/slick-theme.css" />
+<!-- <link rel="stylesheet" href="./src/assets/css/owl.carousel.min.css" /> -->
+<link rel="stylesheet" href="./src/assets/css/jquery.jConveyorTicker.min.css" />
+<link rel="stylesheet" href="./src/assets/css/dnSlide.css">
+<link rel="stylesheet" href="./src/assets/css/jquery.flipster.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+
+<link href="https://fonts.cdnfonts.com/css/calibri-light" rel="stylesheet">
+
+
+<style>
+  #whitespace-js {display: none;}
+</style>
+
+
+
+
+
+<style>
+       @import  url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap');
+
+       .newsletter_cont {
+           background: rgba(0, 0, 0, 0.6);
+           top: 0;
+           right: 0;
+           left: 0;
+           position: fixed;
+           z-index: 999;
+           width: 100%;
+           height: 100%;
+           text-align: center;
+           -moz-animation: pop_out 0.5s linear;
+           animation: pop_out 0.5s linear;
+           display: block;
+           -webkit-transition: all 0.3s linear;
+           transition: all 0.3s linear;
+       }
+       
+       .toast-success {
+             background-color: #f7bb42 !important; /* Your desired background color */
+             color: #fff !important; /* Text color */
+           }
+
+       .newsletter_inner {
+           display: inline-block;
+           -moz-animation: scale 0.5s linear;
+           animation: scale 0.5s linear;
+           position: fixed;
+           transform: translate(-50%, -50%);
+           top: 55%;
+           left: 50%;
+           max-width: 100%;
+           width: 1000px;
+           padding: 0;
+           background: #Fff;
+           height: 600px;
+       }
+       
+       .newsletter_inner .left-sec img {
+   height: 600px;
+   object-fit: cover;
+}
+
+       .close_newsletter {
+           background: url(assets/images/popup-close.png);
+           width: 20px;
+           height: 20px;
+           background-size: cover;
+           position: absolute;
+           top: 20px;
+           right: 20px;
+           font-size: 0;
+       }
+
+       .newsletter_inner section {
+           padding: 0;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+       }
+
+       .newsletter_inner h4 {
+           font-size: 35px;
+           font-weight: 600;
+           padding-bottom: 15px;
+           font-family: 'Rubik', sans-serif;
+           font-size: 40px;
+           padding-bottom: 0;
+           text-transform: uppercase;
+           letter-spacing: 7px;
+           line-height: 100%;
+       }
+
+       .newsletter_inner p {
+           padding-bottom: 15px;
+           color: #fff;
+           text-align: center;
+           padding-bottom: 0;
+           color: #1a1a1a;
+           font-size: 20px;
+           margin: 10px 0;
+           font-weight: 300;
+           line-height: 30px;
+       }
+
+       .newsletter_inner a {
+           font-weight: 600;
+           color: #000;
+       }
+
+       .newsletter_inner a:hover {
+           text-decoration: underline;
+       }
+
+       .left-sec {
+           width: 50%;
+           margin: 0;
+       }
+
+       .right-sec {
+           width: 50%;
+           color: #1a1a1a;
+           padding: 20px;
+       }
+       .newsletter_inner form input {
+           width: 100%;
+           font-size: 16px;
+           font-weight: 300;
+           height: 51px;
+           padding: 0 20px;
+           margin-bottom: 10px;
+       }
+       .newsletter_inner form textarea {
+           width: 100%;
+           font-size: 16px;
+           font-weight: 300;
+           height: 80px;
+           padding: 10px 20px;
+           margin-bottom: 10px;
+       }
+
+       /*.newsletter_inner form input[type="email"] {
+           width: 100%;
+           font-size: 16px;
+           font-weight: 300;
+           height: 51px;
+           padding: 0 20px;
+       }*/
+
+       .newsletter_inner form input[type="submit"] {
+           max-width: 100%;
+           margin: 0 auto;
+           width: 200px;
+           margin: 20px 0 0;
+           height: 45px;
+           background: #093732;
+           color: #Fff;
+           font-size: 20px;
+           border: 0;
+           border-radius: 10px;
+       }
+
+       .newsletter_inner form input[type="submit"]:hover {
+           background: #000;
+       }
+
+       @media  only screen and (max-width:768px) {
+           .left-sec {
+               width: 100%;
+               display: none;
+           }
+
+           .newsletter_inner section {
+               padding: 20px;
+               justify-content: center;
+               flex-wrap: wrap;
+           }
+
+           .right-sec {
+               width: 100%;
+               padding: 0;
+           }
+
+           .left-sec>figure:nth-child(1) {
+               width: 200px;
+               margin: 0 auto 20px;
+               max-width: 100%;
+           }
+
+           .newsletter_inner h3 {
+               font-size: 30px;
+           }
+       }
+
+       .tablinks {
+           border: 0;
+           background: #ccc;
+           color: #fff;
+           border: 0;
+           padding: 10px;
+           font-size: 16px;
+           border-radius: 5px;
+           margin: 0 0 20px;
+       }
+
+       /* Create an active/current tablink class */
+       .tab button.active {
+           background-color: #f7bb42;
+       }
+
+       .eye-btn {
+           width: 150px;
+           display: block;
+           height: auto;
+           background: #1a1a1a;
+           padding: 10px;
+           color: #fff;
+           font-size: 16px;
+           margin: 20px auto 0;
+       }
+
+       .eye-btn:hover {
+           background: #1a1a1a;
+           color: #Fff;
+       }
+
+       .tabcontent h3 {
+           font-size: 20px;
+           margin: 10px 0;
+           line-height: 100%;
+           display: block;
+           font-weight: bold;
+       }
+   </style>
+
+    <title>Absolute Ghost Writing</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+
+
+
+    <a href="tel:(855) 277-7768" class="whatsapp"><i class="fa fa-phone"></i></a>
+<a href="javascript:;" class="chatpop"><i class="fa fa-comment"></i></a>
+
+
+<style>
+  .whatsapp {
+    width: 40px;
+    height: 41px;
+    color: #fff !important;
+    display: block;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 34px;
+    position: fixed;
+    bottom: 130px;
+    left: 20px;
+    z-index: 9999;
+    box-shadow: 6px 9px 30px 1px rgba(37, 0, 22, 0.71);
+    padding: 1px 0;
+    animation: scrollDownAnimation .5s ease infinite alternate;
+    -webkit-animation: scrollDownAnimation .5s ease infinite alternate;
+    background: #f7bb42;
+    background: -moz-linear-gradient(left, #ea018e 0%, #9b2c92 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ea018e', endColorstr='#9b2c92', GradientType=1);
+    display:none;
+  }
+
+  .whatsapp:hover {
+    color: #fff
+  }
+
+  .whatsapp .fa-phone {
+    position: absolute;
+    left: 10px;
+    top: 12px;font-size: 25px;
+  }
+
+  @keyframes scrollDownAnimation {
+
+    from {
+      transform: translateY(0)
+    }
+
+    to {
+      transform: translateY(-10px)
+    }
+
+  }
+
+  @-webkit-keyframes scrollDownAnimation {
+
+    from {
+      transform: translateY(0)
+    }
+
+    to {
+      transform: translateY(-10px)
+    }
+
+  }
+  
+  
+.chatpop {
+    width: 40px;
+    height: 41px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 34px;
+    position: fixed;
+    bottom: 70px;
+    left: 20px;
+    z-index: 9999;
+    box-shadow: 6px 9px 30px 1px rgba(37, 0, 22, 0.71);
+    padding: 1px 0;
+    animation: scrollDownAnimation .5s ease infinite alternate;
+    -webkit-animation: scrollDownAnimation .5s ease infinite alternate;
+    background: #f7bb42;
+    background: -moz-linear-gradient(left, #ea018e 0%, #9b2c92 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ea018e', endColorstr='#9b2c92', GradientType=1);
+     display:none;
+  }
+
+  .chatpop:hover {
+    color: #fff
+  }
+
+  .chatpop .fa-comment {
+    position: absolute;
+    left: 8px;
+    top: 10px;font-size: 25px;
+  }
+
+  @keyframes scrollDownAnimation {
+
+    from {
+      transform: translateY(0)
+    }
+
+    to {
+      transform: translateY(-10px)
+    }
+
+  }
+
+  @-webkit-keyframes scrollDownAnimation {
+
+    from {
+      transform: translateY(0)
+    }
+
+    to {
+      transform: translateY(-10px)
+    }
+
+  }
+</style>
+
+
+
+
+<div class="floatbutton">
+  <div class="btns_wrap">
+
+    <a href="javascript:;" class="chat_wrap" onclick="$zopim.livechat.window.toggle()">
+      <span class="icoo"><i class="fa fa-comment"></i></span>
+      <span>Chat With Us</span>
+    </a>
+    <a href="tel:(855) 277-7768" class="call_wrap">
+      <span class="icoo"><i class="fa fa-phone"></i></span>
+      <span> (855) 277-7768</span>
+    </a>
+  </div>
+
+
+  <div class="clickbutton">
+    <div class="crossplus">50% Off On All Services</div>
+  </div>
+  <div class="banner-form">
+    <h3>Chat With Us to <br>Avail 50% Discount</h3>
+    <div class="banform">
+      <div class="container">
+        <div class="row">
+          <div class="ban-form">
+            <form class="cmxform" id="ordernow-form" action="webpages/bannerFormController.php" method="post">
+                <script>
+   function contactForm(token) {
+     document.getElementById("contactForm").submit();
+   }
+   function onSubmit(token){
+       console.log(token);
+   }
+</script>
+              <div class="alert alert-danger error" style="display: none;"></div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="fldset">
+                    <input type="text" name="Name" placeholder="Name" class="required" onkeyup="validateName(this)" onkeydown="return alphaOnly(event)" required="">
+                    <!-- <input type="hidden" name="email" value="floating Form"> -->
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="fldset">
+                    <input type="Email" name="Email" placeholder=" Email" onkeyup="emailValidation(this)" onkeypress="emailValidation(this)" class="required" required="">
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="fldset">
+                    <!-- <input id="phone-coun" name="Number" type="number" placeholder="Phone Number" required /> -->
+
+                    <input type="text"  id="phone-coun" name="Number" placeholder="Phone number" pattern="^\d{5,}$" minlength="9" required>
+				      <span class="bg-danger col-lg-offset-3 contact_error " style="display: none;">Contact No Incorrect</span>
+
+
+                    <!-- <input type="hidden" class="form-control" placeholder="Url" id="url" name="url" value="" required> -->
+                    <!-- <input type="tel" name="brand_id" id="brand_id" value=15 hidden> -->
+                    <!--<input type="tel" name="package_id" id="package_id" value=1 hidden>-->
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="fldset">
+                    <textarea name="Message" rows="7" placeholder="Talk About Your Project" id="textInput" minlength="25" required></textarea>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="fldset">
+                      <div class="g-recaptcha" data-sitekey="6LdQ2X0qAAAAAN5M4fOrUwFTZ6vTKsDC-l3schBy"></div>
+                    <input name="submit" type="submit" placeholder="Connect With Us" required />
+                    <input class="" type="hidden" name="ctry" value="">
+                    <!--<input type="hidden" name="pc" value="">-->
+                    <input type="hidden" name="cip" value="" class="form-1-ip">
+                    <input type="hidden" name="hiddencapcha" value="">
+                    <input type="hidden" id="location" name="locationURL" value="<?php echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>">
+                    
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="float-badge">
+    <div class="float-img">
+      <span>Reviews</span>
+      <img src="./src/assets/images/hhhh.png">
+      <img src="./src/assets/images/trust-b-1.webp">
+      <img src="./src/assets/images/clutchco.svg">
+      <img src="./src/assets/images/reviewsio-logo-inverted.png">
+      <img src="./src/assets/images/banner-logo-04-1.png">
+    </div>
+</div>
+
+
+<style>
+    .custom-social-proof {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: 300px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      display: none;
+      animation: fadeIn 1s ease;
+      z-index:999999;
+    }
+    .custom-notification {
+      display: flex;
+      padding: 15px;
+    }
+    .custom-notification-image-wrapper {
+      flex-shrink: 0;
+    }
+    .custom-notification-image-wrapper img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    .custom-notification-content-wrapper {
+      margin-left: 10px;
+    }
+    .custom-notification-content {
+      font-size: 10px;
+      color: #333;
+      margin: 0;
+    }
+    .custom-notification-content small {
+      color: #888;
+      display:block;
+    }
+    .custom-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      color: #999;
+      font-size: 18px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+  
+  
+  
+<section class="custom-social-proof">
+  <div class="custom-notification">
+    <div class="custom-notification-image-wrapper">
+      <img id="map1" src="assets/images/map-1.jpg" alt="Map">
+    </div>
+    <div class="custom-notification-content-wrapper">
+      <p class="custom-notification-content">
+        <span id="name">Someone</span> from <span id="country">California</span><br>recently signed up for <span id="product"> Ghostwriting services</span>
+        <small><span id="time">1</span> hour ago</small>
+      </p>
+    </div>
+    <div class="custom-close">&times;</div>
+  </div>
+</section>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+  // Arrays for names, locations, maps, and products (specific to book writing services)
+  var r_names = ["John Doe", "Jane Smith", "David Brown", "Lisa Johnson", "Chris Evans", "Emily Davis", "Mark Wilson"];
+  var r_text = ["California", "Texas", "New York", "Florida", "Washington", "Illinois", "Arizona", "Georgia"];
+  var r_map = [
+    "./src/assets/images/map-1.jpg", 
+    "./src/assets/images/map-1.jpg", 
+    "./src/assets/images/map-1.jpg",
+    "./src/assets/images/map-1.jpg"
+  ];
+  var r_product = ["Ghostwriting services", "Book Editing", "Manuscript Review", "Book Publishing Consultation", "Content Development", "Book Marketing", "Cover Design"];
+
+  // Function to show and update the fake signup notification
+  function showNotification() {
+    var myNumber = Math.floor(Math.random() * r_names.length); // Pick random name and location
+    var randomLocation = Math.floor(Math.random() * r_text.length);
+    var randomMap = Math.floor(Math.random() * r_map.length);
+    var randomProduct = Math.floor(Math.random() * r_product.length);
+    var randomTime = Math.floor(Math.random() * 6) + 1; // Time from 1 to 6 hours ago
+
+    // Update content
+    $("#name").text(r_names[myNumber]);
+    $("#country").text(r_text[randomLocation]);
+    $("#map1").attr("src", r_map[randomMap]); // Update map background
+    $("#product").text(r_product[randomProduct]);
+    $("#time").text(randomTime);
+
+    // Show the notification
+    $(".custom-social-proof").stop().slideDown('slow');
+    
+    // Hide the notification after 6 seconds
+    setTimeout(function() {
+      $(".custom-social-proof").stop().slideUp('slow');
+    }, 6000);
+  }
+
+  // Close button functionality
+  $(".custom-close").click(function() {
+    $(".custom-social-proof").stop().slideUp('slow');
+  });
+
+  // Show a new notification every 14 seconds
+  setInterval(showNotification, 14000);
+
+  // Show the first notification immediately
+  showNotification();
+</script>
+
+
+</main>
+
+
+<!--<script src="./src/assets/js/mlibs.js"></script>-->
+<script src="./src/assets/js/functions.js"></script>
+
+<script src="./src/assets/js/jquery-3.6.0.min.js"></script>
+<script src="./src/assets/js/modernizr-custom-v2.7.1.min.js"></script>
+<script src="./src/assets/js/dnSlide.js"></script>
+<script src="./src/assets/js/expandJS.js"></script>
+<script src="./src/assets/js/particles.min.js"></script>
+<script src="./src/assets/js/particle-app.js"></script>
+<!--<script src="./src/assets/js/app.js"></script>-->
+<script src="./src/assets/js/jquery.preloadinator.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+<script>
+    // $(".js-preloader").preloadinator({
+    //     minTime: 2000,
+    // });
+    $(".js-preloader").delay(600).fadeOut("slow");
+</script>
+<script src="./src/assets/js/dynapagin.js"></script>
+<!-- Solved Psuedo Elements IE Issues -->
+<script src="./src/assets/js/jquery.jConveyorTicker.min.js"></script>
+
+<script src="./src/assets/js/owl.carousel.min.js">
+</script>
+<script src="./src/assets/js/jquery.marquee.min.js"></script>
+<script src="./src/assets/js/slick.min.js"></script>
+<script src="./src/assets/js/jquery.pause.min.js"></script>
+<script src="./src/assets/js/jquery.easing.1.3.js"></script>
+<script src="./src/assets/js/css3-animate-it.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous">
+</script>
+<script src="./src/assets/js/jquery.scrollify.min.js"></script>
+
+<script
+    src="./src/assets/js/vanilla-carousel.min.js">
+</script>
+<script src="./src/assets/js/readmore.min.js"></script>
+<script src="./src/assets/js/jquery.flipster.min.js"></script>
+<script src="./src/assets/js/plugins.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js"></script>
+
+
+<!-- Start of webcodersagency6173 Zendesk Widget script -->
+
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=3aa10160-7600-4211-bcec-5a0763234a4e"></script>
+
+<!-- End of webcodersagency6173 Zendesk Widget script -->
+
+
+<script>
+		$('.chat, .chatt').click(function() {
+
+			Tawk_API.toggle();
+
+		});
+	</script>
+
+	<script>
+	     zE(function() {
+	        $zopim(function() {
+	          $zopim.livechat.setOnUnreadMsgs(unread);
+	            function unread(number) {
+	            if (number>=1)
+	            {
+	          $zopim.livechat.window.show();
+	            }
+	            }
+	        });
+	    });
+	</script>
+
+<script type="text/javascript">
+  zE(function(){
+        zE('messenger', 'open');
+    });
+</script>
+
+	<script>
+		$('.chat, .chatt').click(function() {
+
+			$zopim.livechat.window.toggle();
+
+		});
+	</script>
+
+<script>
+
+
+// $(".testimonial-owl").slick({slidesToShow:1,slidesToScroll:1,arrows:0,speed:600,autoplay:2000,asNavFor:".slider-nav"}),
+
+	$(".testimonial-owl").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    speed: 600,
+    autoplay: true,
+    fade: false,
+});
+
+</script>
+
+<script>
+    // hide default
+    $(document).ready(function() {
+        
+         $("#leadForm").submit(function (e) {
+            let formData = new FormData(this);
+        
+        
+            e.preventDefault();
+        
+            let action = $.ajax({
+              type: "post",
+              url: "https://www.absoluteghostwriting.com/send_mail.php",
+              data: formData,
+              dataType: "json",
+              cache: false,
+              contentType: false,
+              processData: false,
+            });
+            let parent = $(this);
+            action.done(function (response) {
+              if (response.status) {
+                toastr.success("Thank you!");
+                $('#leadForm')[0].reset();
+               
+              } else {
+                toastr.error("Error Occured in submission!");
+              }
+            });
+            action.fail(function (error) {
+              toastr.error("Error Occured in submission!");
+            });
+            
+            
+          });
+          
+          jQuery(document).ready(function () {
+              let urlStroe = window.location.href;
+              jQuery(".locationLink").val(urlStroe);
+            });
+            
+            function getCountryByIP() {
+              fetch("https://ipinfo.io?token=ab03b394f4fb7c")
+                .then((response) => response.json())
+                .then((data) => {
+                  console.log(data);
+                  const country = data?.country;
+                  document?.getElementById("country")?.value = country;
+                  document?.getElementById("ip")?.value = data.ip;
+                  // document.getElementById("country").value = country;
+                })
+                .catch((error) => {
+                  console.error("Error:", error);
+                });
+            }
+        getCountryByIP();
+        $('.newsletter_cont').hide();
+
+        // // show pop up
+        // function show_popup() {
+        //     $(".newsletter_cont").show();
+        // };
+        // window.setTimeout(show_popup, 25000); // 25 seconds
+
+        // $('.close_newsletter').click(function() {
+        //     $('.newsletter_cont').hide();
+        // });
+
+        $('#reload').on('click', function() {
+            $.ajax({
+                type: 'GET',
+                url: 'reload-captcha',
+                success: function(data) {
+                    $(".captcha span").html(data);
+                }
+            });
+        });
+    });
+</script>
+
+<script>
+//     // Show the newsletter after 20 seconds (20000 milliseconds)
+// window.onload = function() {
+//   setTimeout(function() {
+//     document.getElementById("newsletter").style.display = "block";
+//   }, 20000); // 20 seconds
+
+//   // Close the newsletter when the "Close" link is clicked
+//   document.querySelector(".close_newsletter").addEventListener("click", function() {
+//     document.getElementById("newsletter").style.display = "none";
+//   });
+// };
+</script>
+
+
+<!-- <script>
+    $(document).ready(() => {
+
+        // if ($('.spotlight-article').attr('expanded') == 'true') {
+        //     $.scrollify.update();
+        // }
+        // $(".subBtn").on("click", function() {
+        //     $(this).addClass("circle")
+        //     $(this).children("span").addClass("click")
+        //     setTimeout(function() {
+        //         $(this).removeClass("circle")
+        //         $(this).children("span").removeClass("click")
+        //     }.bind(this), 9000)
+        // });
+
+        // Pop up info header
+        $('#contactModal').on('hidden.bs.modal', function(e) {
+            $('body').removeClass('active');
+        })
+    });
+</script> -->
+
+
+
+
+
+
+
+<script>
+    // Base price
+    let basePrice = 126.66;
+
+    // Function to calculate the total price based on selected services and options
+    function calculateTotal() {
+        let additionalServicesTotal = 0;
+        let selectedOptionsTotal = 0;
+
+        // Get all checkboxes and sum up their data-price attribute if checked
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            if (checkbox.checked) {
+                additionalServicesTotal += parseFloat(checkbox.getAttribute('data-price')) || 0;
+            }
+        });
+
+        // Get all select elements and sum up their value for selected options
+        document.querySelectorAll('select').forEach(select => {
+            const value = parseFloat(select.value);
+            if (!isNaN(value)) {
+                selectedOptionsTotal += value;
+            }
+        });
+
+        // Update the total for additional services
+        document.getElementById('additionalServicesTotal').textContent = additionalServicesTotal.toFixed(2);
+
+        // Update the final total price
+        let totalPrice = basePrice + additionalServicesTotal + selectedOptionsTotal;
+        document.getElementById('totalPrice').textContent = totalPrice.toFixed(2);
+    }
+
+    // Attach the event listener to all checkboxes and select elements
+    document.querySelectorAll('input[type="checkbox"], select').forEach(element => {
+        element.addEventListener('change', calculateTotal);
+    });
+</script>
+
+ <script>
+   $.get("https://ipinfo.io", function(response) {
+           
+            $('.form-1-ip').val(response.ip);
+            const currentUrl = window.location.href;
+            $('.form-1-url').val(currentUrl);
+         
+        }, "json")
+</script>
+
+<script type="text/javascript">
+  $(".clickbutton").click(function() {
+    $('.floatbutton').toggleClass("active");
+    $('.crossplus').toggleClass("rotate");
+  });
+</script>
+
+
+
+
+<script>
+		  jQuery(window).ready(function() {
+		    jQuery('[name="Number"]').keyup(function() {
+		      var c = jQuery(this).val();
+		      var strFirstThree = c.substring(0, 3);
+		      var strFirstFour = c.substring(0, 4);
+		      if (strFirstThree == '555' || strFirstFour == '1555') {
+		        alert('This is not a valid number');
+		        jQuery(this).val('');
+		      }
+		    });
+		  });
+		  $("form").submit(function(event) {
+		    $(this).find('[type="submit"]').attr('disabled', true);
+		    var recaptcha = $(this).find("#g-recaptcha-response").val();
+		    if (recaptcha === "") {
+		      $(this).find('[type="submit"]').removeAttr('disabled', true);
+		      event.preventDefault();
+		      alert("Please check the recaptcha");
+		    }
+		  });
+		  // ************** Validate phone number from client side *****************
+		  function noAlphabet(obj) {
+		    reg = /[^0-9]/g;
+		    obj.value = obj.value.replace(reg, "");
+		  }
+		  // ************** Validate Email from client side *****************
+		  function emailValidation(obj) {
+		    reg = /\A[A-Z0-9+_.-]+@[A-Z0-9.-]+\Z/g;
+		    obj.value = obj.value.replace(reg, "");
+		  }
+
+		  function validateName(obj) {
+		    var letters = /^[A-Za-z]+$/;
+		    if (obj.value.match(letters)) {
+		      return true;
+		    } else {
+		      alert("Please use alphabets");
+		      return false;
+		    }
+		  }
+
+		  function alphaOnly(event) {
+		    var key = event.keyCode;
+		    return ((key >= 65 && key <= 90) || key == 8);
+		  }
+		</script>
+		<script src="https://www.google.com/recaptcha/api.js"></script>
+		<script>
+		  if (grecaptcha.getResponse() == "") {
+		    alert("You can't proceed!");
+		  } else {
+		    alert("Thankyou");
+		  }
+		</script>
   </body>
 </html>

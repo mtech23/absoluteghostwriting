@@ -1,7 +1,7 @@
 
 import React from "react";
 import Slider from "react-slick";
-import "./Testimonials.css"; // Importing the styles
+// import "./Testimonials.css";
 
 import DefaultLayout from "../../components/layout";
 import wordood from '../../assets/images/testi-images/worwood-testiimg.png'
@@ -49,12 +49,14 @@ const Testimonials = () => {
     slidesToScroll: 1,
     arrows: true,
   };
+
+  
   return (
     <DefaultLayout>
       <section id="banner_parent">
         <section id="banner" className="page-section">
           <div className="wrapper">
-            <div className="bnr_con animatedParent"></div>
+            <div className="bnr_con testimonial_bnr-con animatedParent"></div>
           </div>
         </section>
       </section>

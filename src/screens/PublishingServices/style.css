@@ -27,6 +27,11 @@
     transform: translatey(-105%);
 }
 
+.pub_serv_con {
+    height: auto !important;
+    padding: 0;
+
+}
 
 @media only screen and (max-width: 1280px) {
     

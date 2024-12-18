@@ -14,6 +14,7 @@ import fax from "../../../assets/images/fax.png";
 import map from "../../../assets/images/map.png";
 import clock from "../../../assets/images/clock.png";
 import ibpa from "../../../assets/images/ibpa.png";
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -26,12 +27,12 @@ const Footer = () => {
                             <div className="row">
                                 <div className="col-md-4 footer-col animated fadeInLeft">
                                     <div className="foo-wrapper-info">
-                                        <a href="/">
+                                        <Link to="/">
                                             <figure>
                                                 <img src={whiteLogo} alt="Absolute Ghostwriting"
                                                     id="logo" />
                                             </figure>
-                                        </a>
+                                        </Link>
                                         <p className="foo-text">Get yourself the reputation you deserve with our <a href="services">services</a>. Connect with are devoted team to share your story and create an outstanding book.</p>
                                         <h2>Aspire. Dare to Inspire.</h2>
                                         <a href="contact-us" className="btn">LET'S TALK</a>
@@ -92,28 +93,28 @@ const Footer = () => {
                                             <ul>
                                                 <li
                                                     className="">
-                                                    <a href="featured-authors">Pride of
-                                                        Absolute Ghostwriting</a></li>
+                                                    <Link to="/featured-authors">Pride of
+                                                        Absolute Ghostwriting</Link></li>
                                                 <li className="">
-                                                    <a href="about-us">About Us</a></li>
+                                                    <Link to="/about-us">About Us</Link></li>
                                                 <li
                                                     className="">
-                                                    <a href="publishing-services">Publishing
-                                                        Services</a></li>
+                                                    <Link to="/publishing-services">Publishing
+                                                        Services</Link></li>
                                                 <li
                                                     className="">
-                                                    <a href="powerhouse-services">Powerhouse
-                                                        Services</a></li>
+                                                    <Link to="/powerhouse-services">Powerhouse
+                                                        Services</Link></li>
                                                 <li
                                                     className="">
-                                                    <a href="testimonials">Author Testimonials</a>
+                                                    <Link to="/testimonials">Author Testimonials</Link>
                                                 </li>
                                                 <li
                                                     className="">
-                                                    <a href="contact-us">Contact Us</a></li>
+                                                    <Link to="/contact-us">Contact Us</Link></li>
                                                 <li
                                                     className="">
-                                                    <a href="privacy-policy">Privacy Policy</a>
+                                                    <Link to="/privacy-policy">Privacy Policy</Link>
                                                 </li>
                                             </ul>
                                         </div>

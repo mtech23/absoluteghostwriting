@@ -1,6 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import whiteLogo from "../../../assets/images/logo-white.png";
+import logoBlack from "../../../assets/images/logo-black.png";
+
 
 const Header = () => {
   return (
@@ -39,11 +42,11 @@ const Header = () => {
           <div className="wrapper">
             <div className="header_con">
               <div className="main_logo">
-                <a href="/">
+                <Link to="/">
                   <figure>
                     <img src={whiteLogo} alt="Absolute Ghostwriting Logo" />
                   </figure>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -54,50 +57,50 @@ const Header = () => {
             <nav className="header_nav">
               <ul>
                 <li className="current_page_item">
-                  <a href="/">Home</a>
+                  <Link to="//">Home</Link>
                 </li>
                 <li className="">
-                  <a href="services">Services</a>
+                  <Link to="/services">Services</Link>
                   <span>
                     <i className="fa fa-2x">&nbsp;&nbsp;&nbsp;&nbsp;</i>
                   </span>
                   <ul>
                     <li className="">
-                      <a href="publishing-services">Publishing Services</a>
+                      <Link to="/publishing-services">Publishing Services</Link>
                     </li>
                     <li className="">
-                      <a href="powerhouse-services">Powerhouse Services</a>
+                      <Link to="/powerhouse-services">Powerhouse Services</Link>
                     </li>
                     <li className="">
-                      <a href="ghostwriting-services">Ghostwriting Services</a>
+                      <Link to="/ghostwriting-services">Ghostwriting Services</Link>
                     </li>
                     <li className="">
-                      <a href="book-printing">Printing</a>
+                      <Link to="/book-printing">Printing</Link>
                     </li>
                     <li className="">
-                      <a href="other-book-services">Other Book Services</a>
+                      <Link to="/other-book-services">Other Book Services</Link>
                     </li>
                     <li className="">
-                      <a href="press-release">Press Release</a>
+                      <Link to="/press-release">Press Release</Link>
                     </li>
                     <li className="">
-                      <a href="childrens-illustrations">
+                      <Link to="/childrens-illustrations">
                         Childrens Illustrations
-                      </a>
+                      </Link>
                     </li>
                     <li className="">
-                      <a href="childrens-book">Childrens book</a>
+                      <Link to="/childrens-book">Childrens book</Link>
                     </li>
                   </ul>
                 </li>
                 <li className="">
-                  <a href="featured-authors">Featured Authors</a>
+                  <Link to="/featured-authors">Featured Authors</Link>
                   <span>
                     <i className="fa fa-2x">&nbsp;&nbsp;&nbsp;&nbsp;</i>
                   </span>
                   <ul>
                     <li className="">
-                      <a href="testimonials">Testimonials</a>
+                      <Link to="/testimonials">Testimonials</Link>
                     </li>
                   </ul>
                 </li>
@@ -120,14 +123,14 @@ const Header = () => {
             <nav className="page_nav">
               <div className="menu_slide_right">
                 <div className="nav_logo">
-                  <a href="./">
+                  <Link to="/">
                     <figure>
                       <img
-                        src="assets/images/logo-black.png"
+                        src={logoBlack}
                         alt="Absolute Ghostwriting"
                       />
                     </figure>
-                  </a>
+                  </Link>
                 </div>
                 <div className="toggle_holder">
                   <div className="hamburger hamburger--spin-r">
